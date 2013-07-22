@@ -2,6 +2,9 @@
   <remote  name="bitbucket"
            fetch="https://bitbucket.org/seandroid" />
 
+  <remote name="scforandroid"
+          fetch="https://github.com/SCforAndroid/" />
+
   <project path="packages/apps/SEAdmin" remote="bitbucket" name="packages-apps-seandroidadmin" revision="intent_mac"/>
 
   <project path="kernel/goldfish" remote="bitbucket" name="kernel-goldfish" revision="seandroid-goldfish-3.4"/>
@@ -38,5 +41,7 @@
 
   <remove-project name="device/lge/mako"/>
   <project path="device/lge/mako" remote="bitbucket" name="device-lge-mako" revision="seandroid" />
+
+  <project path="packages/apps/SCManager" remote="scforandroid" name="packages-apps-scmanager" revision="master" />
 
 </manifest>
