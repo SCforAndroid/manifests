@@ -14,7 +14,7 @@
   <project path="kernel/exynos" remote="bitbucket" name="kernel-exynos" revision="seandroid-exynos-manta-3.4-jb-mr1.1"/>
 
   <remove-project name="platform/build"/>
-  <project path="build" remote="bitbucket" name="build" revision="cp_mac">
+  <project path="build" remote="scforandroid" name="build" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
