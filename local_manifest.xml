@@ -11,7 +11,7 @@
   <project path="kernel/exynos" remote="bitbucket" name="kernel-exynos" revision="seandroid-exynos-manta-3.4-jb-mr1.1"/>
 
   <remove-project name="platform/build"/>
-  <project path="build" remote="bitbucket" name="build" revision="intent_mac">
+  <project path="build" remote="bitbucket" name="build" revision="cp_mac">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -19,10 +19,10 @@
   <project path="external/libselinux" remote="bitbucket" name="external-libselinux" revision="seandroid"/>
 
   <remove-project name="platform/external/sepolicy"/>
-  <project path="external/sepolicy" remote="bitbucket" name="external-sepolicy" revision="intent_mac"/>
+  <project path="external/sepolicy" remote="bitbucket" name="external-sepolicy" revision="cp_mac"/>
 
   <remove-project name="platform/frameworks/base"/>
-  <project path="frameworks/base" remote="bitbucket" name="frameworks-base" revision="intent_mac" />
+  <project path="frameworks/base" remote="bitbucket" name="frameworks-base" revision="cp_mac" />
 
   <remove-project name="platform/system/core"/>
   <project path="system/core" remote="bitbucket" name="system-core" revision="seandroid" />
