@@ -1,0 +1,3 @@
+. build/envsetup.sh
+export HAVE_SELINUX=true
+lunch full_maguro-userdebug
