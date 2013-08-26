@@ -5,16 +5,18 @@
   <remote name="scforandroid"
           fetch="https://github.com/SCforAndroid/" />
 
-  <project path="packages/apps/SEAdmin" remote="bitbucket" name="packages-apps-seandroidadmin" revision="intent_mac"/>
+
+  <project path="packages/apps/SEAdmin" remote="scforandroid" name="packages-apps-seandroidadmin" revision="sc/work"/>
+  <project path="packages/apps/SCManager" remote="scforandroid" name="packages-apps-scmanager" revision="master" />
 
   <project path="kernel/goldfish" remote="bitbucket" name="kernel-goldfish" revision="seandroid-goldfish-3.4"/>
-  <project path="kernel/tegra" remote="bitbucket" name="kernel-tegra" revision="seandroid-tegra3-grouper-3.1-jb-mr1.1"/>
-  <project path="kernel/omap" remote="bitbucket" name="kernel-omap" revision="seandroid-omap-tuna-3.0-jb-mr1.1"/>
-  <project path="kernel/msm" remote="bitbucket" name="kernel-msm" revision="seandroid-msm-mako-3.4-jb-mr1.1"/>
-  <project path="kernel/exynos" remote="bitbucket" name="kernel-exynos" revision="seandroid-exynos-manta-3.4-jb-mr1.1"/>
+  <project path="kernel/tegra" remote="bitbucket" name="kernel-tegra" revision="seandroid-tegra3-grouper-3.1-jb-mr2"/>
+  <project path="kernel/omap" remote="scforandroid" name="kernel-omap" revision="sc/work"/>
+  <project path="kernel/msm" remote="bitbucket" name="kernel-msm" revision="seandroid-msm-mako-3.4-jb-mr2"/>
+  <project path="kernel/exynos" remote="bitbucket" name="kernel-exynos" revision="seandroid-exynos-manta-3.4-jb-mr2"/>
 
   <remove-project name="platform/build"/>
-  <project path="build" remote="scforandroid" name="build" revision="master">
+  <project path="build" remote="scforandroid" name="build" revision="sc/work">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -22,26 +24,27 @@
   <project path="external/libselinux" remote="bitbucket" name="external-libselinux" revision="seandroid"/>
 
   <remove-project name="platform/external/sepolicy"/>
-  <project path="external/sepolicy" remote="bitbucket" name="external-sepolicy" revision="cp_mac"/>
+  <project path="external/sepolicy" remote="scforandroid" name="external-sepolicy" revision="sc/work"/>
 
   <remove-project name="platform/frameworks/base"/>
-  <project path="frameworks/base" remote="bitbucket" name="frameworks-base" revision="cp_mac" />
+  <project path="frameworks/base" remote="scforandroid" name="frameworks-base" revision="sc/work" />
+
+  <remove-project name="platform/frameworks/native"/>
+  <project path="frameworks/native" remote="bitbucket" name="frameworks-native" revision="seandroid-4.3" />
 
   <remove-project name="platform/system/core"/>
-  <project path="system/core" remote="bitbucket" name="system-core" revision="seandroid" />
+  <project path="system/core" remote="bitbucket" name="system-core" revision="seandroid-4.3" />
 
   <remove-project name="device/samsung/tuna"/>
-  <project path="device/samsung/tuna" remote="bitbucket" name="device-samsung-tuna" revision="seandroid" />
+  <project path="device/samsung/tuna" remote="bitbucket" name="device-samsung-tuna" revision="seandroid-4.3" />
 
   <remove-project name="device/samsung/manta"/>
-  <project path="device/samsung/manta" remote="bitbucket" name="device-samsung-manta" revision="seandroid" />
+  <project path="device/samsung/manta" remote="bitbucket" name="device-samsung-manta" revision="seandroid-4.3" />
 
   <remove-project name="device/asus/grouper"/>
-  <project path="device/asus/grouper" remote="bitbucket" name="device-asus-grouper" revision="seandroid" />
+  <project path="device/asus/grouper" remote="bitbucket" name="device-asus-grouper" revision="seandroid-4.3" />
 
   <remove-project name="device/lge/mako"/>
-  <project path="device/lge/mako" remote="bitbucket" name="device-lge-mako" revision="seandroid" />
-
-  <project path="packages/apps/SCManager" remote="scforandroid" name="packages-apps-scmanager" revision="master" />
+  <project path="device/lge/mako" remote="bitbucket" name="device-lge-mako" revision="seandroid-4.3" />
 
 </manifest>
